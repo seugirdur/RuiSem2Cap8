@@ -104,11 +104,23 @@ int main()
         printf("O caractere nao foi encontrado!");
     }
 
+    printf("\nDigite X para sair  \n");
+    char saida;
+    while(saida != 'X' && saida != 'x')
+    {
+        scanf(" %c", &saida);
+
+        if(saida != 'X' && saida != 'x') {
+            printf("Erro, digite novamente  \n");
+        }
+    }
+
+
 
     return 0;
 }
 
-#endif // Ex82
+#endif
 
 #ifdef Ex83
 int main()
@@ -149,7 +161,7 @@ int valorInt, *pValorInt;
     scanf("%lf", pValorDouble);
 
     printf("Digite um caractere: ");
-    scanf(" %c", pValorChar);  // Note o espaço antes do %c para consumir a quebra de linha anterior
+    scanf(" %c", pValorChar);
 
     printf("Digite um valor unsigned long: ");
     scanf("%lu", pValorUnsignedLong);
@@ -208,6 +220,18 @@ int main()
         printf("Nenhum valor positivo foi digitado.");
     }
 
+    printf("\nDigite X para sair  \n");
+    char saida;
+    while(saida != 'X' && saida != 'x')
+    {
+        scanf(" %c", &saida);
+
+        if(saida != 'X' && saida != 'x') {
+            printf("Erro, digite novamente  \n");
+        }
+    }
+
+
     return 0;
 }
 #endif
@@ -262,6 +286,18 @@ void cadastrarPessoas() {
 int main() {
     cadastrarPessoas();
     exibirRegistros();
+
+    printf("\nDigite X para sair  \n");
+    char saida;
+    while(saida != 'X' && saida != 'x')
+    {
+        scanf(" %c", &saida);
+
+        if(saida != 'X' && saida != 'x') {
+            printf("Erro, digite novamente  \n");
+        }
+    }
+
 
     return 0;
 }
@@ -345,6 +381,7 @@ int main()
         printf("Deseja encerrar o programa? (s/n): ");
         scanf(" %c", &resposta);
     } while (resposta != 's' && resposta != 'S');
+
 
     return 0;
 }
